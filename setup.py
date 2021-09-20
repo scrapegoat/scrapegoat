@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="scrapegoat", 
-    version="0.0.1",
+    version="0.0.1.10",
     author="Navaneeth",
     author_email="scrapegoat.python@gmail.com",
     description="Scrapegoat is a python library that can be used to scrape the websites from internet based on the\
