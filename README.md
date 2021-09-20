@@ -20,19 +20,17 @@ The multiprocessing module allows the programmer to fully leverage multiple proc
 ## Using Scrapegoat
 The examples/main.py file contains these
 ```python
-from utils import automate
-from utils import SearchFunction
-from multiprocess import getLinkData
-from multiprocess import generateData
+url = 'https://kannada.asianetnews.com/central-government-jobs/hal-is-recruiting-apprentice-posts-and-check-details-qzbcph'
+topic = "engineering"
+cores = 6
+language = 'kn'
 
-if __name__ == '__main__':
-	s = SearchFunction('kn','engineering')
-	links = s.LinkCollection(n_link=10)
-	for url in links:
-		text, mean = getLinkData(url=url,topic=topic, language='kn', cores=6)
-		#### Save files you need by comparing mean###
-	# or use below this will generate the data for you 
-	#generateData(topic,folder_path,cores=6)
+if _name=="main_":
+    import scrapegoat as sg 
+    from scrapegoat.utils import automate
+    from scrapegoat.multiprocess import getLinkData
+    text,score = getLinkData(url=url, topic=topic, language=language, cores=cores)
+    print(text, score)
 
 ```
 
