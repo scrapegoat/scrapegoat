@@ -25,7 +25,7 @@ topic = "engineering"
 cores = 6
 language = 'kn'
 
-if _name=="main_":
+if __name__=="__main__":
     import scrapegoat as sg 
     from scrapegoat.utils import automate
     from scrapegoat.multiprocess import getLinkData
