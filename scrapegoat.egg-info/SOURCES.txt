@@ -1,0 +1,10 @@
+README.md
+setup.py
+scrapegoat/__init__.py
+scrapegoat/main.py
+scrapegoat/utils.py
+scrapegoat.egg-info/PKG-INFO
+scrapegoat.egg-info/SOURCES.txt
+scrapegoat.egg-info/dependency_links.txt
+scrapegoat.egg-info/requires.txt
+scrapegoat.egg-info/top_level.txt
