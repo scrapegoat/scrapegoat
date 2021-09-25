@@ -5,7 +5,7 @@
 **Scrapegoat** is a python library that can be used to scrape the websites from internet based on the relevance of the given topic irrespective of language using ***Natural Language Processing***. It can be mainly used for *non-English language* to get accurate and relevant scraped text.
 
 ## Concept
-Initially the data is scraped from website  and  processed ( to remove English words if the data required is in other language). The **BERT** model is feed with processed data and topic  to compute the **cosine similarity** of the given topic with each word of the scraped data then mean of cosine similarity scores of is computed. If the mean is greater that threshold then scraped data is generated as output. Also there is a section where we are using *Adaptive threshold*.
+Initially the data is scraped from website  and  processed ( to remove English words if the data required is in other language). The **BERT** model is feed with processed data and topic  to compute the **cosine similarity** of the given topic with each word of the scraped data then mean of cosine similarity scores of is computed. If the mean is greater than threshold then scraped data is generated as output. Also there is a section where we are using *Adaptive threshold*.
 
 ![Alt text](https://github.com/Scrape-Goat/scrapegoat/blob/main/img/goatblockscrape.png?raw=true "Title")  
 ### BERT Model
@@ -18,7 +18,7 @@ Initially the data is scraped from website  and  processed ( to remove English w
 ![Alt text](https://github.com/Scrape-Goat/scrapegoat/blob/main/img/cos.png?raw=true "Title")
 
 ### Multi Processing
-The multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. ***The basic ideology of Multi-Processing is that if you have an algorithm that can be divided into different workers (processors), then you can speed up the program.*** Machines nowadays come with 4,6,8 and 16 cores, therefore parts of the code can be deployed in parallel.
+The multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. ***The basic ideology of Multi-Processing is that if you have an algorithm that can be divided into different workers (small processors/cores), then you can speed up the program.*** Machines nowadays come with 4,6,8 and 16 cores, therefore parts of the code can be deployed in parallel.
 
 ## Using Scrapegoat
 The examples/test.py file contains these
