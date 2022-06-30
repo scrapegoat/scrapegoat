@@ -1,11 +1,8 @@
-from itertools import product
-import numpy as np
 from scrapegoat.utils import automate
 from scrapegoat.utils import search_links
-import time
-import time
 import os
-from sentence_transformers import SentenceTransformer 
+from sentence_transformers import SentenceTransformer
+
 
 def getLinkData(url, topic, language='en', tag='p'):
 	'''
@@ -23,26 +20,21 @@ def getLinkData(url, topic, language='en', tag='p'):
     	mean 			: int type -> cosine similarity score 
 	'''
 	try:
-		t1 = time.time()
+		# t1 = time.time()
 		auto = automate()
-		tex = auto.get_text(url, tag=tag) # Get the text
-		texts = ""
+		tex = auto.get_text(url) # Get the text
+		# texts = ""
+		sim_score = auto.get_similarityScore(tex, topic)
 
-		if len(tex)<1000:
-			return None
-		tt = [' '.join(tex.split()[i*200:(i+1)*200]) for i in range(len(tex.split())//200 + 1)]
+		# if len(tex)<1000:
+		# 	return None
+		# tt = [' '.join(tex.split()[i*200:(i+1)*200]) for i in range(len(tex.split())//200 + 1)]
 
-		if language!='en':
-			texts = auto.translate_to_eng(tt[0])
-		else:
-			texts = tex 
-		
-		
-		model_name = 'bert-base-nli-mean-tokens'
-		model = SentenceTransformer(model_name)
-		vecs = model.encode([texts,auto.getWiki(topic)])
-
-		return tex, auto.cosine_similarity(vecs[0],vecs[1])
+		# if language!='en':
+		# 	texts = auto.translate_to_eng(tt[0])
+		# else:
+		# 	texts = tex 
+		return tex, sim_score
 
 	except Exception as e:
 		print(e)
