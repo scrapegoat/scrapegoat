@@ -8,9 +8,7 @@ setuptools.setup(
     version="1.0.0.2",
     author="Navaneeth",
     author_email="scrapegoat.python@gmail.com",
-    description="Scrapegoat is a python library that can be used to scrape the websites from internet based on the\
-                  relevance of the given topic irrespective of language using Natural Language Processing. It can be mainly\
-                  used for non-English language to get accurate and relevant scraped text.",
+    description="Scrape data with ease",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Scrape-Goat/scrapegoat",
