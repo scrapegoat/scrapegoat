@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="scrapegoat", 
-    version="1.0.0.2",
+    version="1.0.0.3",
     author="Navaneeth",
     author_email="scrapegoat.python@gmail.com",
     description="Scrape data with ease",
@@ -28,6 +28,6 @@ setuptools.setup(
       "pandas>=1.1.5",
       "Wikipedia-API>=0.5.4",
       "sentence_transformers",
-      "google"
+      "googlesearch-python"
    ],
 )
