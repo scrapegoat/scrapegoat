@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="scrapegoat", 
-    version="0.0.2.3",
+    version="1.0.0.2",
     author="Navaneeth",
     author_email="scrapegoat.python@gmail.com",
     description="Scrapegoat is a python library that can be used to scrape the websites from internet based on the\
@@ -23,13 +23,13 @@ setuptools.setup(
     python_requires='>=3.6',
    install_requires=[
       "GoogleNews>=1.5.9",
-      "googlesearch-python>=1.0.1",        
       "googletrans>=3.1.0a0",
       "scipy>=1.7.1",
       "beautifulsoup4>=4.9.3",
       "numpy>=1.21.1",
       "pandas>=1.1.5",
       "Wikipedia-API>=0.5.4",
-      "sentence_transformers"
+      "sentence_transformers",
+      "google"
    ],
 )
