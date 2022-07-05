@@ -33,8 +33,7 @@ Initially the data is scraped from a website  and  processed ( to remove English
 
 
 <p align="center">
-    <img src="
-https://user-images.githubusercontent.com/63489382/177380223-3e15e413-fb09-4642-9ccc-5a0730ed25a9.png" alt="drawing" width="500"/>
+    <img src="https://user-images.githubusercontent.com/63489382/177380223-3e15e413-fb09-4642-9ccc-5a0730ed25a9.png" alt="drawing" width="500"/>
 </p>
 
 ### Multi Processing
