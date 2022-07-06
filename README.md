@@ -16,6 +16,15 @@
 
 **Scrapegoat** is a python library that can be used to scrape the websites from internet based on the relevance of the given topic irrespective of language using ***Natural Language Processing***. It can be mainly used for *non-English language* to get accurate and relevant scraped text.
 
+
+Do consider using this package if necessary and feel free to mail me for any clarifications.
+- Navaneeth's Contacts
+    - `email`: navaneethsharma2310oct@gmail.com
+    - `twitter`:  https://twitter.com/navaneethakbh
+- Pritam's Contacts
+    - `email`: pritam.kawr@gmail.com
+
+
 ## Concept
 Initially the data is scraped from a website  and  processed ( to remove English words if the data required is in other language). The **BERT** model is feed with processed data and topic  to compute the **cosine similarity** of the given topic with each word of the scraped data then mean of cosine similarity scores of is computed. If the mean is greater than threshold then scraped data is generated as output. Also there is a section where we are using *Adaptive threshold*.
 
