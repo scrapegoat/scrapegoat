@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="scrapegoat", 
-    version="1.0.0.6",
+    name="scrapegoat",
+    version="1.0.0.7",
     author="Navaneeth",
     author_email="scrapegoat.python@gmail.com",
     description="Scrape data in one-shot",
@@ -19,7 +19,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
-   install_requires=[
+    install_requires=[
       "GoogleNews>=1.5.9",
       "googletrans>=3.1.0a0",
       "scipy>=1.7.1",
@@ -30,5 +30,5 @@ setuptools.setup(
       "sentence_transformers",
       "google",
       "tqdm"
-   ],
+    ],
 )
