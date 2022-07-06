@@ -1,9 +1,8 @@
 <h1> SCRAPEGOAT </h1>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/63489382/176208117-40101555-d460-4af4-8e97-0b485203a41d.png" alt="drawing" width="250"/>
+    <img src="https://user-images.githubusercontent.com/63489382/177471710-beaa7603-6a51-45f6-afaa-9c948a928bbd.png" alt="drawing" width="200"/>
 </p>
-
 
 <p align="center">
    Scrape data in one shot.
