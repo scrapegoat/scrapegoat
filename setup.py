@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="scrapegoat", 
-    version="1.0.0.5",
+    version="1.0.0.6",
     author="Navaneeth",
     author_email="scrapegoat.python@gmail.com",
     description="Scrape data in one-shot",
