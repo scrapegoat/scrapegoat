@@ -3,6 +3,7 @@ from scrapegoat.utils import search_links
 from scrapegoat.utils import scrape
 from scrapegoat.utils import translate
 import os
+from tqdm import tqdm
 
 
 def getLinkData(url, topic, language='en'):
@@ -67,7 +68,7 @@ def generateData(topic, language='en', folder_path=None, adaptive_threshold=True
 		topic = translate(topic, language)
 		links = search_links(language, topic, n_links=n_links).search_()
 
-		for i,link in enumerate(links):
+		for i,link in tqdm(enumerate(links), desc="Generating Data.. "):
 			# Looping through each links 
 			text, mean = getLinkData(url=link, language=language, topic=topic)
 			if mean>threshold:
@@ -91,7 +92,7 @@ def generateData(topic, language='en', folder_path=None, adaptive_threshold=True
 		links = list(set(links))
 		
 		# Looping through each links 
-		for i,link in enumerate(links):
+		for i,link in tqdm(enumerate(links), desc="Generating Data.. "):
 			try:
 				text, mean = getLinkData(url=link, topic=topic,language=language)
 			except:
