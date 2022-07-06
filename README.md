@@ -17,7 +17,7 @@
 **Scrapegoat** is a python library that can be used to scrape the websites from internet based on the relevance of the given topic irrespective of language using ***Natural Language Processing***. It can be mainly used for *non-English language* to get accurate and relevant scraped text.
 
 
-Do consider using this package if necessary and feel free to mail me for any clarifications.
+Do consider using this package if necessary and feel free to mail us for any clarifications.
 - Navaneeth's Contacts
     - `email`: navaneethsharma2310oct@gmail.com
     - `twitter`:  https://twitter.com/navaneethakbh
