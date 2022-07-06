@@ -40,6 +40,14 @@ Initially the data is scraped from a website  and  processed ( to remove English
 The multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. ***The basic ideology of Multi-Processing is that if you have an algorithm that can be divided into different workers (small processors/cores), then you can speed up the program.*** Machines nowadays come with 4,6,8 and 16 cores, therefore parts of the code can be deployed in parallel.
 
 ## Using Scrapegoat
+
+#### Install Quickly
+```bash
+pip install scrpaegoat
+```
+
+
+
 The examples/test.py file contains these
 ```python
 from scrapegoat.main import getLinkData
