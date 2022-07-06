@@ -43,7 +43,7 @@ The multiprocessing module allows the programmer to fully leverage multiple proc
 
 #### Install Quickly
 ```bash
-pip install scrpaegoat
+pip install scrapegoat
 ```
 
 
