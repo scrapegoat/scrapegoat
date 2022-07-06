@@ -23,6 +23,10 @@ Do consider using this package if necessary and feel free to mail us for any cla
     - `twitter`:  https://twitter.com/navaneethakbh
 - Pritam's Contacts
     - `email`: pritam.kawr@gmail.com
+- Sagar's Contacts
+    - `email`: sagarr192001@gmail.com
+- Bharath's Contacts
+    - `email`: bharath.br17@gmail.com
 
 
 ## Concept
